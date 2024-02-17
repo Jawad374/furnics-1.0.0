@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Furnics</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-body">
+    <header id="header" class="site-header text-black">
+      <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/main-logo.png" class="logo" />
+          </a>
+
+          <div class="offcanvas-body">
+            <ul
+              id="navbar"
+              class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3"
+            >
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#billboard">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#about-us">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#collections">Shop </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="billboard" class="overflow-hidden">
+      <div class="swiper main-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="banner-item"
+              style="
+                background-image: url(images/banner-image1.jpg);
+                background-repeat: no-repeat;
+                background-position: right;
+                height: 682px;
+              "
+            >
+              <div class="banner-content padding-large">
+                <h1
+                  class="display-1 text-uppercase text-dark pb-2"
+                  style="padding-left: 20px"
+                >
+                  Welcome To Furnics
+                </h1>
+                <p style="padding-left: 20px">
+                  Welcome to our Furniture Shop, where elegance meets comfort!
+                  Explore timeless designs from warm wooden tables to luxurious
+                  sofas, creating spaces that resonate with your unique style.
+                  Elevate your living experience with us, where furnishing
+                  becomes an artful expression. Discover a home that's a
+                  masterpiece of comfort and style.
+                </p>
+                <a
+                  class="btn btn-medium btn-arrow position-relative mt-5"
+                  style="margin-left: 40px"
+                >
+                  <span class="text-uppercase">Shop Now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+      <div class="swiper-pagination position-absolute"></div>
+    </section>
+
+    <section id="about-us">
+      <div class="container">
+        <div class="row align-items-center justify-content-between g-5">
+          <div class="col-lg-6">
+            <div class="image-holder mb-4 jarallax">
+              <img
+                src="images/single-image1.jpg"
+                alt="single"
+                class="img-fluid jarallax-img"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="detail p-5">
+              <div class="display-header">
+                <h2 class="display-2 text-uppercase text-dark pb-2">
+                  About Us
+              </h2>
+              <p class="pb-3">
+                  Welcome to our furniture sanctuary. We're a dedicated team passionate about crafting exceptional pieces that redefine your living spaces.
+              </p>
+              <p>
+                  From timeless classics to contemporary marvels, our commitment to quality and authenticity ensures each item is a statement of your unique style. Join us in creating a future where every room is a canvas, and your home tells a story as individual as you are.
+              </p>
+                <a
+                class="btn btn-medium btn-arrow position-relative mt-5"
+                >
+                  <span class="text-uppercase">About us</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="position-relative padding-medium">
+      <div class="container">
+        <div class="row">
+          <div class="swiper collection-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div
+                    class="card-detail d-flex justify-content-between align-items-baseline pt-3"
+                  >
+                    <h3 class="card-title text-uppercase">
+                      <a href="shop.html">Living Rooms</a>
+                    </h3>
+                  </div>
+                  <div class="image-overlay position-relative">
+                    <div class="product-image">
+                      <img
+                        src="images/product-item5.jpg"
+                        alt="product-item"
+                        class="product-image img-fluid"
+                      />
+                      <div class="text-box box-slide position-absolute">
+                        <div class="text-content p-5 bg-light">
+                          <h3>About Room</h3>
+                          <p>
+                            Experiencing times like no other. The escape of the body, 
+                            a rightful pursuit of similar joys in certain moments.
+                          </p>
+                          <ul>
+                            <li>Various Types of Bedroom</li>
+                            <li>Different Size of Bed</li>
+                            <li>Comfortable and Clean Room</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div
+                    class="card-detail d-flex justify-content-between align-items-baseline pt-3"
+                  >
+                    <h3 class="card-title text-uppercase">
+                      <a href="shop.html">Bed Rooms</a>
+                    </h3>
+                  </div>
+                  <div class="image-overlay position-relative">
+                    <div class="product-image">
+                      <img
+                        src="images/product-item6.jpg"
+                        alt="product-item"
+                        class="product-image img-fluid"
+                      />
+                      <div class="text-box box-slide position-absolute">
+                        <div class="text-content p-5 bg-light">
+                          <h3>About Room</h3>
+                          <p>
+                            Experiencing times like no other. The escape of the body, 
+                            a rightful pursuit of similar joys in certain moments.
+                          </p>
+                          <ul>
+                            <li>Various Types of Bedroom</li>
+                            <li>Different Size of Bed</li>
+                            <li>Comfortable and Clean Room</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div
+                    class="card-detail d-flex justify-content-between align-items-baseline pt-3"
+                  >
+                    <h3 class="card-title text-uppercase">
+                      <a href="shop.html">Kitchens</a>
+                    </h3>
+                  </div>
+                  <div class="image-overlay position-relative">
+                    <div class="product-image">
+                      <img
+                        src="images/product-item7.jpg"
+                        alt="product-item"
+                        class="product-image img-fluid"
+                      />
+                      <div class="text-box box-slide position-absolute">
+                        <div class="text-content p-5 bg-light">
+                          <h3>About Kitchen</h3>
+                          <p>
+                            Experiencing times like no other. The escape of the body, 
+                            a rightful pursuit of similar joys in certain moments.
+                          </p>
+                          <ul>
+                            <li>Various Types of Bedroom</li>
+                            <li>Different Size of Bed</li>
+                            <li>Comfortable and Clean Room</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="overflow-hidden padding-large">
+      <div class="container">
+        <div class="row">
+          <div class="row d-flex flex-wrap justify-content-between">
+            <div class="col-md-3 pb-3 pe-4">
+              <div class="footer-menu">
+                <img src="images/main-logo.png" alt="logo" class="pb-3" />
+                <p>Furniture Shop</p>
+              </div>
+              <div class="copyright">
+                <p>
+                  © Copyright 2023.
+                  <br /><br />Design by <br />
+                  <ul>
+                    <li>Javeria Kanwal</li>
+                    <li>Maheen Sajjad</li> 
+                </p>
+              </div>
+            </div>
+            <div class="col-md-2 pb-3">
+              <div class="footer-menu text-uppercase">
+                <h5 class="widget-title pb-2">Quick Links</h5>
+                <ul class="menu-list list-unstyled text-uppercase">
+                  <li class="menu-item pb-2">
+                    <a href="#billboard">Home</a>
+                  </li>
+                  <li class="menu-item pb-2">
+                    <a href="#about-us">About</a>
+                  </li>
+                  <li class="menu-item pb-2">
+                    <a href="#collections">Shop</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 pb-3">
+              <div class="footer-menu text-uppercase">
+                <h5 class="widget-title pb-2">Social</h5>
+                <div class="social-links">
+                  <ul class="list-unstyled">
+                    <li class="pb-2">Facebook</li>
+                    <li class="pb-2">Twitter</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-menu contact-item">
+                <h5 class="widget-title text-uppercase pb-2">Contact Us</h5>
+                <p>+92000000000</p>
+                <p>FurnitureShop@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

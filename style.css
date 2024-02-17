@@ -1,0 +1,382 @@
+:root {
+  --bs-primary: #787d62;
+  --swiper-theme-color: #787d62 !important;
+}
+
+/* Fonts */
+:root {
+  --body-font: "Poppins", sans-serif;
+  --heading-font: "Cinzel", sans-serif;
+}
+
+/*---------------- Footer CSS -----------------------------*/
+
+#footer {
+  border: 2px solid black; /* Set the border color and thickness as needed */
+  border-radius: 10px; /* Optional: Add rounded corners for a softer look */
+  background-color: #f8f9fa; /* Optional: Add a background color for contrast */
+  padding: 20px; /* Optional: Add padding for spacing */
+}
+
+#footer .footer-menu img {
+  max-width: 100%; /* Ensure the logo doesn't exceed its container */
+}
+
+#footer .copyright ul {
+  padding-left: 0; /* Remove default padding for the list */
+  list-style: none; /* Remove default list styling */
+}
+
+#footer .footer-menu,
+#footer .copyright {
+  margin-bottom: 20px; /* Optional: Add spacing between sections */
+}
+
+#footer .widget-title {
+  color: #333; /* Set the title color */
+}
+
+#footer .menu-item a {
+  color: #333; /* Set the text color for menu items */
+  font-weight: bold; /* Optional: Adjust font weight */
+}
+
+#footer .menu-item a:hover {
+  color: var(--bs-primary); /* Set the text color on hover */
+}
+
+#footer .social-links li {
+  color: #333; /* Set the text color for social links */
+}
+
+#footer .contact-item p {
+  color: #333; /* Set the text color for contact information */
+}
+
+/*---------------- Navbar CSS -----------------------------*/
+
+#header-nav {
+  border: 2px solid black; /* Set the border color and thickness as needed */
+  border-radius: 10px; /* Optional: Add rounded corners for a softer look */
+  background-color: #f8f9fa; /* Optional: Add a background color for contrast */
+  padding: 10px; /* Optional: Add padding for spacing */
+}
+
+#navbar .nav-link {
+  color: #333; /* Set the text color */
+  font-weight: bold; /* Optional: Adjust font weight */
+}
+
+#navbar .nav-link:hover {
+  color: var(--bs-primary); /* Set the text color on hover */
+}
+
+/*----------------------------------------------*/
+/* 1 GENERAL TYPOGRAPHY */
+/*----------------------------------------------*/
+
+/* 1.1 General Styles
+/*----------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--accent-color);
+  margin: 0;
+}
+
+ul.inner-list li {
+  font-size: 1.2em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: var(--bs-dark);
+  text-decoration: none;
+  transition: 0.3s color ease-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--bs-primary);
+}
+
+.form-control:focus,
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* - Section Padding
+--------------------------------------------------------------*/
+.padding-small {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.padding-medium {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.padding-large {
+  padding-top: 7em;
+  padding-bottom: 7em;
+}
+
+/* - Section margin
+--------------------------------------------------------------*/
+.margin-small {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.margin-medium {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.margin-large {
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+
+/* - Section Title
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heading-font);
+}
+
+/* - Section width
+--------------------------------------------------------------*/
+.container-fluid {
+  max-width: 1540px;
+}
+
+/*--------------------------------------------------------------
+/** 2.10 Buttons
+--------------------------------------------------------------*/
+/* - Button Sizes
+------------------------------------------------------------- */
+.btn.btn-small {
+  padding: 0.8em 1.8em;
+  font-size: 0.65em;
+}
+
+.btn.btn-medium {
+  padding: 1.1em 2.8em;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+}
+
+.btn.btn-large {
+  padding: 2.4em 5.1em;
+  font-size: 1.8em;
+}
+
+/*----------------------------------------------*/
+/* 2 SITE STRUCTURE */
+/*----------------------------------------------*/
+
+/*--------------------------------------------------------------
+/** Jarallax
+--------------------------------------------------------------*/
+.jarallax {
+  position: relative;
+  z-index: 0;
+  min-height: 510px;
+}
+
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.jarallax-img {
+  position: relative;
+  z-index: 0;
+}
+
+.jarallax img.jarallax-img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto !important;
+  z-index: -100;
+}
+
+/*  Image Overlay
+------------------------------------------------------------- */
+
+.image-overlay {
+  cursor: pointer;
+}
+
+.image-overlay .product-image {
+  overflow: hidden;
+}
+
+.image-overlay .product-image img {
+  transform: translateY(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.box-slide {
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  color: var(--bs-dark);
+  transition: transform 0.6s ease-in-out;
+}
+
+.image-overlay:hover .box-slide {
+  transform: translateY(0%);
+}
+
+.image-overlay:hover img {
+  transform: translateY(-10%);
+}
+
+/* Button Hover Effects 2
+------------------------------------------------------------- */
+.btn.btn-arrow {
+  color: var(--bs-light);
+  background-color: var(--bs-primary);
+  border-radius: 0;
+}
+
+.btn.btn-arrow.btn-bg-light {
+  color: var(--bs-dark);
+  background-color: var(--bs-light);
+}
+
+.btn.btn-arrow.outline-dark {
+  color: var(--bs-dark);
+  background-color: transparent;
+  border: 1px solid var(--bs-dark);
+}
+
+.btn.btn-arrow.btn-normal {
+  color: var(--bs-dark);
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+}
+
+.btn.btn-arrow span {
+  display: inline-block;
+  transition: all 300ms ease-out;
+  will-change: transform;
+}
+
+.btn.btn-arrow:hover span {
+  transform: translate3d(-7px, 0, 0);
+}
+
+.btn.btn-arrow svg {
+  position: absolute;
+  top: 32px;
+  right: 21px;
+  transform: translateY(-50%);
+  transition: all 300ms ease-out;
+  will-change: right, opacity;
+}
+
+.btn.btn-arrow:hover svg {
+  opacity: 0;
+  right: 0;
+}
+
+.btn svg.icon-arrow {
+  width: 25px;
+  height: 25px;
+}
+
+/* - Sticky
+------------------------------------------------------------- */
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+/* 1. Header
+/*----------------------------------------------*/
+
+.navbar-nav .nav-item a.nav-link {
+  color: var(--accent-color);
+}
+
+/* 2. Billboard
+/*----------------------------------------------*/
+/*------------Swiper Arrow -----------*/
+.banner-content p {
+  width: 50%;
+}
+
+#billboard .swiper-pagination {
+  left: -730px;
+  bottom: 160px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  cursor: pointer;
+  border-color: transparent;
+  transition: border-color 0.3s ease-out;
+}
+
+.swiper-pagination .swiper-pagination-bullet::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50px;
+  border: 1px solid #4a4a4a;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 10px !important;
+}
+
+.swiper-pagination
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active:after,
+.swiper-pagination span.swiper-pagination-bullet:hover:after {
+  transform: scale(2);
+}
+
+/* 9. Brand Collection
+/*----------------------------------------------*/
+#brand-collection a img {
+  opacity: 0.3;
+  transition: opacity 0.3s ease-out;
+}
+#brand-collection a:hover img {
+  opacity: 1;
+}
